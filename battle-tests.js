@@ -95,6 +95,8 @@ function atk(sta, dmg, pc){
     
     if (((stamina_value - sta) >= 0)&&((e_life_value - total_dmg) > 0)){
     // IF THERES STAMINA AND THE ENEMY SURVIVE
+        atk_animation()
+        
         e_life(-Math.abs(total_dmg))
         stamina(-Math.abs(sta))
 
@@ -105,9 +107,12 @@ function atk(sta, dmg, pc){
 
     }else if((e_life_value - total_dmg) <= 0){
     //IF THE ENEMY DIE
+        atk_animation()
+
         window.alert("YOU KILLED HIM!!!")
 
         enemy.style.display = "none";
+
 
         ending(link1);
     }else if((stamina_value - sta) <= 0){
@@ -184,6 +189,8 @@ function e_atk(sta, dmg, pc){
 
         ending(link2);
     }
+
+e_atk_animation()
 
 document.getElementById("e_dmg").innerHTML = Math.abs(dmg);
 document.getElementById("e_crt").innerHTML = Math.abs(critical_dmg.toFixed(2));
