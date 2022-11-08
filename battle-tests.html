@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PROJECT_TESTS_INDEX</title>
+    
+    <link rel="icon" type="image/x-icon" href="https://www.gifcen.com/wp-content/uploads/2021/09/kirby-gif-2.gif">
+    <link rel="stylesheet" href="battle-tests.css">
+    
+</head>
+<body>
+    
+<div>
+
+
+    
+    <div class="game-board">
+        
+        <div id="char" class="char">
+            stamina:<progress id="char_stamina" class="char_stamina" max="100" value="100"></progress>
+            life:<progress id="char_life" class="char_life" max="100" value="100"></progress>
+            atack damage:<output id="char_dmg"></output>+ critical:<output id="char_crt"></output>
+        </div>
+        
+        <div id="enemy" class="enemy">
+            stamina:<progress id="enemy_stamina" class="enemy_stamina" max="100" value="100"></progress>
+            life:<progress id="enemy_life" class="enemy_life" max="100" value="100"></progress>
+            atack damage:<output id="e_dmg"></output>+ critical:<output id="e_crt"></output>
+        </div>
+      
+    </div>
+    
+    <div class="painel" id="painel">
+        
+        <button type="button" id="atk" onclick="atk(10, 12, 100)">ATK</button>
+        
+
+        <button type="button" id="def" onclick="def(20, 20)">DEF</button>
+        
+    </div>
+    
+</div>
+</body>
+<script src="battle-tests.js"></script>
+</html>
