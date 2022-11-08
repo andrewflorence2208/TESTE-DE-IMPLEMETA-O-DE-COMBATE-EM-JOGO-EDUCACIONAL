@@ -53,9 +53,8 @@ body {
     width: 100px;
     background-color: royalblue;
     left: 50px;
-    bottom: 30px;
+    bottom: 40px;
     animation: none;
-    color: red;
 }
 
 .enemy {
@@ -65,7 +64,6 @@ body {
     right: 50px;
     top: 30px;
     background-color: red;
-    color: royalblue;
 }
 
 
