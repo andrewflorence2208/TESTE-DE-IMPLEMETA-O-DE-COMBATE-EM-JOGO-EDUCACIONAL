@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PROJECT_TESTS_INDEX</title>
+    
+    <link rel="icon" type="image/x-icon" href="https://www.gifcen.com/wp-content/uploads/2021/09/kirby-gif-2.gif">
+    <link rel="stylesheet" href="battle-tests.css">
+    
+</head>
+<body>
+    
+<div id="patern_screen">
+
+    <button type="button" class="info_bt" onclick="info()">COMO JOGAR?</button>
+
+    <div class="game-board">
+        
+        <div id="char" class="char">
+        </div>
+        
+        <div class="char-info" id="char_info">
+            <center><h3>CHAR INFO:</h3></center>
+
+            energia:<progress id="char_stamina" class="char_stamina" max="100" value="100"></progress>
+            saúde:<progress id="char_life" class="char_life" max="100" value="100"></progress>
+            <output id="char_action"></output>
+        </div>
+        
+        <div id="enemy" class="enemy">
+        </div>
+        <div class="enemy-info" id="enemy_info">
+            <center><h3>ENEMY INFO:</h3></center>
+
+
+            energia:<progress id="enemy_stamina" class="enemy_stamina" max="100" value="100"></progress>
+            saúde:<progress id="enemy_life" class="enemy_life" max="100" value="100"></progress>
+            <output id="enemy_action"></output>
+        </div>
+        
+    </div>
+    
+    <div class="painel game-board" id="painel">
+        
+        <button class="button-pushable atk-button" role="button" onclick="atk(10, 12, 100)">
+            <span class="button-shadow"></span>
+            <span class="button-edge"></span>
+            <span class="button-front text">
+              ATK
+            </span>
+        </button>
+        
+
+        <button class="button-pushable2 def-button" role="button" onclick="def(20, 20)">
+            <span class="button-shadow2"></span>
+            <span class="button-edge2"></span>
+            <span class="button-front2 text">
+              DEF
+            </span>
+        </button>
+        
+        
+    </div>
+
+    
+
+    
+</div>
+
+
+<div class="info_painel" id="info_painel">
+    
+    <center><h1>COMO JOGAR:</h1></center>
+
+    <ul>
+        <li>Você controla o persogem do canto inferior esquerdo e tem por objetivo
+             zerar a barra de <b>SAÚDE</b> de seu adversário, personagem do canto superior direito;</li>
+        <li>Com o botão <b>ATK</b> você retira parte da <b>SAÚDE</b> de seu adversário em troca de parte 
+            de sua <b>ENERGIA</b>;
+        </li>
+        <li>
+            Recupera-se <b>SAÚDE</b> e <b>ENERGIA</b> ao pressionar <b>DEF</b>;
+        </li>
+        <li>
+            Todos começam com <b>100</b> de <b>SAÚDE</b> e <b>ENERGIA</b>, você pode acompanhar quando de <b>DANO</b>
+            cada um desfere ao outro através do <b>QUADRO DE INFO</b> ao lado de cada respectivo persogem, bem como o <b>CRÍTICO</b>
+            que se soma ao <b>DANO</b> base descontado;
+        </li>
+        <li><B>O JOGO AINDA ESTÁ EM DESENVOLVIMENTO, BUGS PODEM SER ENCONTRADOS.</B></li>
+
+    </ul>
+
+   <center><button type="button" onclick="continuar()" class="continuar-bt">CONTINUAR</button></center>
+    
+    
+</div>
+
+</body>
+<script src="battle-tests.js"></script>
+</html>
